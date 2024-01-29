@@ -36,6 +36,6 @@ Route::get('/register', function () {
 Route::get('/register', [RegisterController::class, 'create'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/logout', [LoginController::class, 'logout']);
+Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/login', [LoginController::class, 'LoginForm'])->name('login');
 Route::post('/authenticate', [LoginController::class, 'authenticate']);
