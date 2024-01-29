@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Hide the links on smaller screens */
+#navbar-links {
+  display: none;
+}
+
+/* Toggle the navbar links */
+@media (max-width: 768px) {
+  #toggle-input:checked ~ #navbar-links {
+    display: flex;
+  }
+}
+
+/* Hamburger button animation */
+#toggle-input:checked ~ #navbar-links ul li a svg {
+  transform: rotate(180deg);
+}
+
+  
+  
