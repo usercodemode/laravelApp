@@ -35,11 +35,7 @@
                         © 2024 My Company
                     </footer>
                 </aside>
-                <div class="flex-grow p-4 bg-white rounded-md shadow-md">
-                  @php
-                  // dd($posts->title);
-                  echo $posts->title;
-                  @endphp
+                <div class="flex-grow p-4 bg-white rounded-md shadow-md"> 
                     <h2 class="mb-4 text-lg font-bold">Welcome {{ auth()->user()->name }}!</h2>
                     <div class="grid grid-cols-2 gap-4 mb-4">
                         <div class="px-4 py-4 bg-gray-100 rounded-md">

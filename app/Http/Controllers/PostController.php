@@ -12,23 +12,33 @@ class PostController extends Controller
 {
     public function store(Request $request){
 
+        //dd($request);
+
         $validatedData = $request->validate([
-            'title' => 'required|string|max:255',
-            'body' => 'required|string|min:1',
+            'title' => ['required'],
+            'body' => ['required'],
         ]);
 
-        $post = Post::create([[
-            'title' => $validatedData['title'],
-            'body' => $validatedData['body'],
+        $post = Post::create([
+            'title' => $request->title,
+            'body' => $request->body,
             'user_id' => Auth::id(),
-        ]]);
+        ]);
 
-        return redirect('dashboard');
+        //dd($request->title);
+
+        return redirect('blog');
     }
 
     public function show($id){
         $posts = Post::findOrFail($id);
 
-        return view('dashboard', compact('posts'));
+        return view('blog', compact('posts'));
+    }
+
+    public function userPosts(){
+        $posts = User::find(1)->posts;
+
+        return view('post', compact('posts'));
     }
 }

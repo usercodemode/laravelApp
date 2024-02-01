@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->string('body')->nullable();
-            $table->foreignId('user_id')->nullable();
+            $table->string('title')->default('');
+            $table->string('body')->default('');
+            $table->foreignId('user_id')->default(0);
             $table->timestamps();
         });
     }
