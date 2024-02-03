@@ -26,10 +26,10 @@
             <main class="flex flex-grow px-4 py-8">
                 <aside class="flex flex-col justify-between w-56 mr-4 bg-white rounded-md shadow-md">
                     <nav class="px-4 py-4 space-y-2">
-                        <a href="#" class="text-base font-medium text-gray-600 hover:text-gray-700">Overview</a>
-                        <a href="#" class="text-base font-medium text-gray-600 hover:text-gray-700">Users</a>
-                        <a href="#" class="text-base font-medium text-gray-600 hover:text-gray-700">Posts</a>
-                        <a href="#" class="text-base font-medium text-gray-600 hover:text-gray-700">Analytics</a>
+                       
+                        <a href="/blogs" class="text-base font-medium text-gray-600 hover:text-gray-700">Blog</a>
+                        <a href="/posts" class="text-base font-medium text-gray-600 hover:text-gray-700">Posts</a>
+                       
                     </nav>
                     <footer class="px-4 py-4 text-sm text-center text-gray-500">
                         © 2024 My Company

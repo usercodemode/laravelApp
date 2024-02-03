@@ -13,8 +13,7 @@
 
     <nav class="bg-white border-gray-200 shadow-md full dark:bg-gray-900 dark:border-gray-700 ">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
-            <a href="https://www.codewithfaraz.com" class="flex items-center">
-                {{-- <img src="https://www.codewithfaraz.com/InstaPic.png" class="h-8 mr-3" alt="codewithfaraz Logo" /> --}}
+            <a href="" class="flex items-center">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Logo</span>
             </a>
             <button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button"
@@ -119,7 +118,7 @@
 
     <main class="h-full">
 
-        <div class="container px-4 mx-auto">
+        <div class="container h-screen px-4 mx-auto">
 
             <div class="p-2 my-4 bg-gray-300 rounded">
                 ...
@@ -164,56 +163,8 @@
                         </label>
                         <!-- ... -->
                     </form>
-                    <p class="my-2 font-bold text-gray-400">- Create a new <a href="/register"
-                            class="p-1 text-gray-500 border-2 rounded">account</a></p>
+                    
                 </div>
-                
-                <div class="my-5 intro">
-                    <h1 class="font-['Outfit'] text-3xl lg:text-2xl text-gray-600 fw-bolder">
-                        ONLINE SHOPPING
-                    </h1>
-                    <p class="font-serif text-sm italic text-gray-700">
-                        Lorem ipsum dolor sit amet, consectetur.
-                    </p>
-                </div>
-                
-
-
-            </div>
-
-
-
-
-            <div class="grid grid-cols-1 gap-4 mt-14 sm:grid-cols-2 md:grid-cols-3">
-                <div class="p-4 bg-white border-2 rounded-lg shadow-md">
-                    <h3 class="mb-4 text-lg font-semibold">Div 1</h3>
-                    <p>Content for the first div.</p>
-                </div>
-                <div class="p-4 bg-gray-200 rounded-lg">
-                    <h3 class="mb-4 text-lg font-semibold">Div 2</h3>
-                    <p>Content for the second div.</p>
-                </div>
-                <div class="p-4 bg-gray-200 rounded-lg">
-                    <h3 class="mb-4 text-lg font-semibold">Div 3</h3>
-                    <p>Content for the third div. This div will only appear on medium screens and above.</p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4">
-            <div class="p-4 bg-gray-200 rounded-lg">
-                ...
-            </div>
-            <div class="p-4 bg-gray-100 rounded-lg">
-                ...
-            </div>
-            <div class="p-4 bg-gray-200 rounded-lg">
-                ...
-            </div>
-            <div class="p-4 bg-gray-100 rounded-lg">
-                ...
             </div>
         </div>
 

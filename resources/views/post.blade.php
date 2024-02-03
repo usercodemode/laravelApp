@@ -9,12 +9,11 @@
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="bg-gray-100">
 
     <nav class="bg-white border-gray-200 shadow-md full dark:bg-gray-900 dark:border-gray-700 ">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
-            <a href="https://www.codewithfaraz.com" class="flex items-center">
-                {{-- <img src="https://www.codewithfaraz.com/InstaPic.png" class="h-8 mr-3" alt="codewithfaraz Logo" /> --}}
+            <a href="" class="flex items-center">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Logo</span>
             </a>
             <button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button"
@@ -119,62 +118,62 @@
 
     <main class="h-full">
 
+        {{-- <table class="w-full text-left rounded-lg shadow-md table-auto whitespace-nowrap">
+            <thead>
+                <tr>
+                    <th class="px-4 py-3 text-gray-500 border-b-2 border-gray-200 title-case">Title</th>
+                    <th class="px-4 py-3 text-gray-500 border-b-2 border-gray-200 title-case">Body</th>
+                    <th class="px-4 py-3 text-gray-500 border-b-2 border-gray-200 title-case">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($posts as $post)
+                
+                <tr class="odd:bg-gray-100">
+                    <td class="px-4 py-3 border-b border-gray-200">{{ $post->title }}</td>
+                    <td class="px-4 py-3 border-b border-gray-200">{{ $post->body }}</td>
+                    <td class="px-4 py-3 border-b border-gray-200"><div class="flex items-center space-x-4">
+                        <a class="inline" method="POST" href="/edit/{{ $post->id }}">
+                            @csrf
+                        <button
+                            class="px-2 text-gray-600 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-700">EDIT</button>
+                        </a>
+                        <form class="inline" method="POST" action="/delete/{{ $post->id }}">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="px-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 hover:text-white">X</button>
+                        </form>
+                    </div></td>
+                </tr>
+                @endforeach
+                
+            </tbody>
+        </table> --}}
+
         <div class="container px-4 mx-auto">
 
-            <div class="p-2 my-4 bg-gray-300 rounded">
-                ...
-            </div>
-
-            <div class="grid grid-cols-1 gap-2 p-2 my-4 rounded md:grid-cols-2">
-
-                <div class="my-5 intro">
-                    <h1 class="font-['Outfit'] text-3xl lg:text-2xl text-gray-600 fw-bolder">
-                        ONLINE SHOPPING
-                    </h1>
-                    <p class="font-serif text-sm italic text-gray-700">
-                        Lorem ipsum dolor sit amet, consectetur.
-                    </p>
-                </div>
-                <div class="p-5 bg-gray-100 login rounded-2xl">
-                    ...                                  
-                </div>
-
-
-            </div>
-
             @foreach ($posts as $post)
-            <div class="grid grid-cols-1 gap-4 mt-14 sm:grid-cols-2 md:grid-cols-3">
-                <div class="p-4 bg-gray-200 rounded-lg">
-                    <div class="mb-2 text-lg font-semibold">{{ $post->title }}</div>
-                    <div class="p-4 bg-white rounded">
-                        <p>{{ $post->body }}</p>
-                    </div>
-                </div>
+            <div class="p-2 mt-5 bg-white rounded shadow-md md:w-1/2">
+                <div class="mb-2 font-mono font-bold text-gray-950 text-md"><a class="underline" href="/blog/{{ $post->id }}">{{ $post->title }}</a></div>
+                        <div class="my-3">
+                            <p>{{ $post->body }}</p>
+                        </div>
+            <div class="flex items-center space-x-4">
+                            <a class="inline" method="POST" href="/edit/{{ $post->id }}">
+                                @csrf
+                            <button
+                                class="px-4 py-2 text-gray-600 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-700">EDIT</button>
+                            </a>
+                            <form class="inline" method="POST" action="/delete/{{ $post->id }}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 hover:text-white">DELETE</button>
+                            </form>
+                        </div></td>
             </div>
-            @endforeach
-            
-        </div>
-
-
-
-        <div class="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4">
-            <div class="p-4 bg-gray-200 rounded-lg">
-                ...
-            </div>
-            <div class="p-4 bg-gray-100 rounded-lg">
-                ...
-            </div>
-            <div class="p-4 bg-gray-200 rounded-lg">
-                ...
-            </div>
-            <div class="p-4 bg-gray-100 rounded-lg">
-                ...
-            </div>
-        </div>
+            @endforeach      
 
         </div>
-
-
 
     </main>
 
