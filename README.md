@@ -5,6 +5,6 @@ https://github.com/usercodemode/laravelApp/blob/main/login.png
 
 [login](login.png)
 
-<img src="https://raw.github.com/usercodemode/laravelApp/blob/main/login.png
+<img src="https://raw.githubusercontent.com/usercodemode/laravelApp/blob/main/login.png
 " width="30%"/>
 ![Alt text](https://raw.githubusercontent.com/usercodemode/laravelApp/blob/main/login.png?raw=true "Optional Title")
