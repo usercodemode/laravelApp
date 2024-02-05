@@ -16,7 +16,7 @@
 
 <h2><li>Create Posts</li></h2>
 
-![lp_post](https://github.com/usercodemode/laravelApp/assets/147582140/e1a05a06-8e15-421c-b187-32c5e0899201)
+![new_post](https://github.com/usercodemode/laravelApp/assets/147582140/246f65f8-640e-4522-857c-c668a92bfe23)
 
 <h2><li>Browse Posts</li></h2>
 
@@ -28,4 +28,5 @@
 
 <h2><li>Public/Private Feature</li></h2>
 
-![private](https://github.com/usercodemode/laravelApp/assets/147582140/2c4ad13b-f830-46e1-a6fc-bc4250316f96)
+![new_visibility](https://github.com/usercodemode/laravelApp/assets/147582140/8803aee6-4b09-425c-8d05-435f17d61731)
+
